@@ -1,0 +1,63 @@
+:root {
+  --black: #0f0f0f;
+  --white: #fefefe;
+  --grey: #d9d9d9;
+  --dark: rgba(0, 0, 0, 0.3);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  min-height: 100svh;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clean__transition * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+#text {
+  position: relative;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 12rem;
+  line-height: 0.9em;
+  letter-spacing: 2px;
+  text-align: center;
+  transform: rotate(-30deg) skew(25deg);
+  user-select: none;
+  text-shadow: 0px 0px 0 #d9d9d9,  -1px 1px 0 #d9d9d9,  -2px 2px 0 #d9d9d9,  -3px 3px 0 #d9d9d9,  -4px 4px 0 #d9d9d9,  -5px 5px 0 #d9d9d9,  -6px 6px 0 #d9d9d9,  -7px 7px 0 #d9d9d9,  -8px 8px 0 #d9d9d9,  -9px 9px 0 #d9d9d9,  -10px 10px 0 #d9d9d9,  -11px 11px 0 #d9d9d9,  -12px 12px 0 #d9d9d9,  -13px 13px 0 #d9d9d9,  -14px 14px 0 #d9d9d9,  -15px 15px 0 #d9d9d9,  -16px 16px 0 #d9d9d9,  -17px 17px 0 #d9d9d9,  -18px 18px 0 #d9d9d9,  -19px 19px 0 #d9d9d9,  -20px 20px 0 #d9d9d9,  -21px 21px 0 #d9d9d9,  -22px 22px 0 #d9d9d9,  -23px 23px 0 #d9d9d9,  -24px 24px 0 #d9d9d9,  -25px 25px 0 #d9d9d9,  -26px 26px 0 #d9d9d9,  -27px 27px 0 #d9d9d9,  -28px 28px 0 #d9d9d9,  -29px 29px 0 #d9d9d9;
+}
+#text:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 40px;
+  left: -40px;
+  color: var(--dark);
+  text-shadow: none;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style.css.map */

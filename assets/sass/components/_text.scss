@@ -1,0 +1,26 @@
+#text {
+  position: relative;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 12rem;
+  line-height: 0.9em;
+  letter-spacing: 2px;
+  text-align: center;
+  transform: rotate(-30deg) skew(25deg);
+  user-select: none;
+
+  @include text-shadow-mixin(#d9d9d9, 30);
+
+  &:before {
+    content: attr(data-text);
+    position: absolute;
+    // top: 30px;
+    // left: -30px;
+    top: 40px;
+    left: -40px;
+    color: var(--dark);
+    text-shadow: none;
+    filter: blur(8px);
+    z-index: -1;
+  }
+}

@@ -1,0 +1,22 @@
+:root {
+  --black: #0f0f0f;
+  --white: #fefefe;
+  --grey: #d9d9d9;
+  --dark: rgba(0, 0, 0, 0.3);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  min-height: 100svh;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
